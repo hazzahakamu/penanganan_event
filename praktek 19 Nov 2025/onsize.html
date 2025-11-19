@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Contoh onresize</title>
+</head>
+<body onresize="lakukanSesuatu()">
+    <h1>Ubah ukuran jendela browser</h1>
+    <p id="info"></p>
+
+    <script>
+        function lakukanSesuatu() {
+            
+            let lebar = window.innerWidth;
+            let tinggi = window.innerHeight;
+            document.getElementById('info').innerHTML = 
+                'Ukuran Jendela: ' + lebar + 'px x ' + tinggi + 'px';
+        }
+        lakukanSesuatu();
+    </script>
+</body>
+</html>

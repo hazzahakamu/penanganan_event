@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>onmousever</title>
+</head>
+<body>
+    <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="Hugging_Face_Emoji_2028ce8b-c213-4d45-94aa-21e1a0842b4d_large.webp" alt="Smiley" width="32" height="32">
+
+    <p> kalau kursor nya di arahkan ke emojinya maka emojinya akan membesar </p>
+    <p> jika kursornya tidak di arahkan ke emojinya maka emojinya tidak akan membesar </p>
+
+    <script>
+function bigImg(x) {
+  x.style.height = "64px";
+  x.style.width = "64px";
+}
+
+function normalImg(x) {
+  x.style.height = "32px";
+  x.style.width = "32px";
+}
+</script>
+
+</body>
+</html>
